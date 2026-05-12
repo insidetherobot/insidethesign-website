@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Linnea Maas | InsideTheSign — Minneapolis Sign Design</title>
+  <meta name="description" content="Linnea Maas is a trained visual artist and commercial signage project manager in Minneapolis, MN. InsideTheSign brings a boutique studio's personal attention to every project, from concept through installation." />
+  <link rel="canonical" href="https://insidethesign.com/about.html" />
+
+  <meta property="og:title" content="About Linnea Maas | InsideTheSign" />
+  <meta property="og:description" content="Linnea Maas is a trained visual artist and commercial signage project manager in Minneapolis, MN. One point of contact, concept to installation." />
+  <meta property="og:image" content="https://insidethesign.com/images/linnea-headshot.jpg" />
+  <meta property="og:url" content="https://insidethesign.com/about.html" />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "InsideTheSign",
+    "url": "https://insidethesign.com",
+    "telephone": "952-239-0110",
+    "email": "info@insidethesign.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Minneapolis",
+      "addressRegion": "MN",
+      "addressCountry": "US"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Linnea Maas",
+      "jobTitle": "Owner, Designer and Project Manager"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #f9f7f4;
+      --dark: #1a1a1a;
+      --accent: #c8873a;
+      --accent-dark: #a86d28;
+      --text: #2a2a2a;
+      --muted: #595959;  /* WCAG: 6.7:1 on --bg */
+      --border: #ddd8d0;
+      --white: #fff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    p { text-wrap: pretty; }
+    h1, h2, h3 { text-wrap: balance; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    img { display: block; max-width: 100%; }
+
+    /* ── SKIP NAV ── */
+    .skip-nav {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      padding: 0.5rem 1.25rem;
+      background: var(--accent);
+      color: var(--white);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      z-index: 200;
+    }
+    .skip-nav:focus { top: 0; }
+
+    /* ── NAV ── */
+    body > nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 4rem;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo { display: flex; align-items: center; }
+    .nav-logo img { height: 130px; width: auto; mix-blend-mode: multiply; }
+
+    body > nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    body > nav ul a {
+      color: var(--dark);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    body > nav ul a:hover { color: var(--accent); }
+    body > nav ul a[aria-current="page"] { color: var(--accent); }
+
+    /* Nav CTA as filled button — accent-dark+white = 4.3:1 */
+    .nav-cta {
+      background: var(--accent-dark) !important;
+      color: var(--white) !important;
+      padding: 0.45rem 1.1rem !important;
+      font-weight: 700 !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--dark) !important; }
+
+    /* Focus visible (WCAG 2.4.7) */
+    :focus-visible { outline: 2px solid var(--accent-dark); outline-offset: 3px; }
+
+    /* ── BUTTONS ── */
+    .its-btn {
+      display: inline-block;
+      padding: 0.95rem 1.9rem;
+      font-family: inherit;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 0;
+      transition: all 0.2s;
+    }
+    /* accent-dark on white = 4.3:1 */
+    .its-btn.prim { background: var(--accent-dark); color: var(--white); }
+    .its-btn.prim:hover { background: var(--dark); }
+    .its-btn.ghost { background: transparent; color: var(--dark); border: 1.5px solid var(--dark); }
+    .its-btn.ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── INTRO ── */
+    .its-intro {
+      padding: calc(150px + 5rem) 4rem 5rem;
+      border-bottom: 1px solid var(--border);
+      background: #efeae1;
+    }
+    .its-intro p {
+      font-size: clamp(2rem, 3.2vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--dark);
+      letter-spacing: -0.02em;
+    }
+
+    /* ── BIO BODY ── */
+    .its-bio {
+      display: grid;
+      gap: 5rem;
+      padding: 6rem 4rem;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+    .its-bio.photo-right { grid-template-columns: 1.6fr 1fr; }
+
+    .its-photo { position: sticky; top: 100px; }
+    .its-photo img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+
+    .its-photo-caption {
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .its-photo-caption strong { font-size: 0.9rem; font-weight: 700; color: var(--dark); }
+    .its-photo-caption span { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+
+    .its-text p { font-size: 1.06rem; line-height: 1.85; color: var(--text); margin-bottom: 1.5rem; }
+    .its-text p:last-child { margin-bottom: 0; }
+    .its-text .lead { font-size: 1.18rem; font-weight: 700; color: var(--dark); }
+
+    /* ── TAGLIST ── */
+    .its-taglist {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .its-taglist .tl-head {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+    .its-taglist ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2rem;
+      row-gap: 0.55rem;
+    }
+    .its-taglist li {
+      font-size: 0.95rem;
+      color: var(--dark);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .its-taglist .tl-cta { margin-top: 2rem; display: flex; }
+
+    /* ── STATEMENT BAND ── */
+    .its-statement {
+      background: var(--dark);
+      padding: 7rem 4rem;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    .its-statement p {
+      font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--white);
+      line-height: 1.35;
+    }
+    .its-statement p em { font-style: normal; color: var(--accent); }
+
+    /* ── CTA ── */
+    .its-cta {
+      padding: 6rem 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    .its-cta h2 { font-size: clamp(1.6rem, 2.4vw, 2.2rem); font-weight: 700; color: var(--dark); }
+    .its-cta .actions { display: flex; gap: 1rem; }
+
+    /* ── DESKTOP BREAK ── */
+    .desk-br { display: none; }
+    @media (min-width: 961px) { .desk-br { display: inline; } }
+
+    /* ── HAMBURGER + MOBILE MENU ── */
+    .nav-hamb {
+      display: none;
+      background: transparent;
+      border: none;
+      padding: 0.5rem;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+    .nav-hamb span { display: block; width: 22px; height: 1.5px; background: var(--dark); }
+
+    .nav-mobile {
+      display: none;
+      position: fixed;
+      left: 0; right: 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      z-index: 99;
+      flex-direction: column;
+    }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--dark);
+      font-weight: 400;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-mobile a:hover { color: var(--accent); }
+    .nav-mobile a:last-child { border-bottom: none; }
+    .nav-mobile .nav-cta { color: var(--dark) !important; background: transparent !important; font-weight: 700; padding: 1rem 1.5rem !important; border-left: 3px solid var(--accent-dark); }
+
+    /* BACK TO TOP */
+    .back-to-top {
+      display: flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px;
+      background: var(--accent-dark); color: var(--white);
+      border: none; border-radius: 0; cursor: pointer;
+      margin: 1.5rem 2rem 1.5rem auto;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.4s, background 0.2s;
+    }
+    .back-to-top.visible { opacity: 1; pointer-events: auto; }
+    .back-to-top:hover { background: var(--dark); }
+    .back-to-top svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* ── FOOTER ── */
+    .its-footer {
+      background: var(--dark);
+      padding: 2.5rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .its-footer .flogo { font-size: 1rem; font-weight: 400; color: rgba(255,255,255,0.6); letter-spacing: 0.03em; transition: color 0.2s; }
+    .its-footer .flogo:hover { color: var(--white); }
+    .its-footer .flogo em { font-style: italic; }
+    .its-footer .flogo em span { color: var(--accent); }
+    .its-footer nav ul { display: flex; gap: 2rem; }
+    .its-footer nav a {
+      color: rgba(255,255,255,0.65);  /* WCAG: 5.3:1 on dark */
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .its-footer nav a:hover { color: var(--accent); }
+    .its-footer .fcopy { font-size: 0.72rem; color: rgba(255,255,255,0.55); }  /* WCAG: 4.5:1 on dark */
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      body > nav { padding: 1rem 1.5rem; }
+      body > nav ul { display: none; }
+      .nav-hamb { display: flex; }
+
+      .its-intro {
+        padding: calc(160px + 2.5rem) 1.5rem 2.5rem;
+      }
+      .its-intro p { font-size: clamp(1.5rem, 6.5vw, 2.1rem); }
+
+      .its-bio {
+        padding: 2.5rem 1.5rem;
+        gap: 2.5rem;
+        grid-template-columns: 1fr !important;
+      }
+      .its-photo { position: static; max-width: 360px; }
+      .its-text p { font-size: 1rem; line-height: 1.7; }
+      .its-text .lead { font-size: 1.08rem; }
+
+      .its-taglist { margin-top: 2rem; padding-top: 1.5rem; }
+      .its-taglist ul { grid-template-columns: 1fr !important; }
+      .its-taglist .tl-cta { margin-top: 1.75rem; }
+      .its-taglist .tl-cta .its-btn { width: 100%; text-align: center; }
+
+      .its-statement { padding: 4rem 1.5rem; }
+      .its-statement p { font-size: clamp(1.4rem, 6vw, 1.9rem); line-height: 1.3; }
+
+      .its-cta { padding: 3rem 1.5rem; gap: 1.5rem; }
+      .its-cta h2 { font-size: 1.4rem; }
+      .its-cta .actions .its-btn { width: 100%; text-align: center; }
+
+      .its-footer {
+        padding: 2.25rem 1.5rem calc(env(safe-area-inset-bottom, 0px) + 2.25rem);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.75rem;
+      }
+      .its-footer nav ul {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.85rem 1.5rem;
+        border-top: 1px solid rgba(255,255,255,0.08);
+        padding-top: 1.5rem;
+      }
+      .its-footer nav a { font-size: 0.7rem; }
+      .its-footer .fcopy {
+        font-size: 0.68rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255,255,255,0.08);
+      }
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+  <a class="skip-nav" href="#main">Skip to content</a>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="nav-logo"><img src="logo-nav.png" alt="InsideTheSign" /></a>
+    <ul>
+      <li><a href="portfolio.html">Work</a></li>
+      <li><a href="index.html#specialties">Services</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="nav-hamb" aria-label="Open menu" aria-expanded="false" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+    <a href="portfolio.html">Work</a>
+    <a href="index.html#specialties">Services</a>
+    <a href="about.html" aria-current="page">About</a>
+    <a href="index.html#contact" class="nav-cta">Contact Us</a>
+  </div>
+
+  <main id="main">
+
+    <!-- INTRO -->
+    <section class="its-intro">
+      <p>InsideTheSign is a boutique design and signage studio run by an artist who knows the industry from the inside.</p>
+    </section>
+
+    <!-- BIO: text left, photo right -->
+    <section class="its-bio photo-right" aria-label="About Linnea Maas">
+      <div class="its-text">
+        <p class="lead">Linnea Maas brings a trained visual artist's eye, years of experience as both designer and commercial signage project manager, and deep expertise across the full range of commercial signage.</p>
+        <p>She develops each project from concept to completion, managing everything required to get it fabricated, permitted, and installed.</p>
+        <p>Linnea speaks fluently to every person on a project for a seamless, efficient, and enjoyable process. Whether you arrive with a complete vision or need help developing one from scratch, you'll have one point of contact from the first conversation through final installation.</p>
+        <p>Linnea works with a curated network of local Minneapolis fabricators and installers. Clients get a personal studio's attention and a professional operation's capability, concept to installation.</p>
+
+        <div class="its-taglist">
+          <div class="tl-head">Areas of expertise</div>
+          <ul>
+            <li>Exterior building signage</li>
+            <li>Channel letters</li>
+            <li>Monument signs</li>
+            <li>Interior environments</li>
+            <li>ADA and wayfinding</li>
+            <li>Murals</li>
+            <li>Environmental graphics</li>
+            <li>Art forward decor</li>
+            <li>Placemaking</li>
+            <li>Vehicle and trailer wraps</li>
+          </ul>
+          <div class="tl-cta">
+            <a href="portfolio.html" class="its-btn ghost">View Our Work</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="its-photo">
+        <img src="images/linnea-headshot.jpg" alt="Linnea Maas, owner and principal designer at InsideTheSign" />
+        <div class="its-photo-caption">
+          <strong>Linnea Maas</strong>
+          <span>Owner, Designer &amp; Project Manager</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATEMENT BAND -->
+    <div class="its-statement">
+      <p>A personal studio's attention.<br class="desk-br"> <em>A professional operation's capability.</em></p>
+    </div>
+
+    <!-- CTA -->
+    <section class="its-cta">
+      <h2>Ready to start a project?</h2>
+      <div class="actions">
+        <a href="index.html#contact" class="its-btn prim">Contact Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <footer class="its-footer">
+    <a href="index.html" class="flogo">Inside<em>The<span>Sign</span></em></a>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="portfolio.html">Work</a></li>
+        <li><a href="index.html#specialties">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+    </nav>
+    <span class="fcopy">&copy; 2026 InsideTheSign. Minneapolis, MN.</span>
+  </footer>
+
+  <script>
+    const backToTop = document.getElementById('back-to-top');
+    new IntersectionObserver(([entry]) => {
+      backToTop.classList.toggle('visible', entry.isIntersecting);
+    }, { threshold: 0.5 }).observe(backToTop);
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const hamb = document.querySelector('.nav-hamb');
+    const mobileMenu = document.getElementById('nav-mobile');
+    const mainNav = document.querySelector('body > nav');
+
+    function openMobileMenu() {
+      mobileMenu.classList.add('open');
+      mobileMenu.style.top = mainNav.offsetHeight + 'px';
+      hamb.setAttribute('aria-expanded', 'true');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+    }
+    function closeMobileMenu() {
+      if (!mobileMenu.classList.contains('open')) return;
+      mobileMenu.classList.remove('open');
+      hamb.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+    }
+
+    hamb.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mobileMenu.classList.contains('open') ? closeMobileMenu() : openMobileMenu();
+    });
+    document.addEventListener('click', (e) => {
+      if (!mainNav.contains(e.target) && !mobileMenu.contains(e.target)) closeMobileMenu();
+    });
+    document.addEventListener('touchmove', closeMobileMenu, { passive: true });
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMobileMenu));
+  </script>
+</body>
+</html>

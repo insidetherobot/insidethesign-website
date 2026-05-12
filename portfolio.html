@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Design Portfolio — Murals, ADA Signage &amp; Wraps | InsideTheSign Minneapolis</title>
+  <meta name="description" content="Portfolio of InsideTheSign, a boutique sign design studio in Minneapolis, MN. Murals, ADA wayfinding, vehicle wraps, lobby signage, window art, and more across the Twin Cities metro." />
+  <link rel="canonical" href="https://insidethesign.com/portfolio.html" />
+  <meta property="og:title" content="Sign Design Portfolio | InsideTheSign Minneapolis" />
+  <meta property="og:description" content="Murals, ADA wayfinding, vehicle wraps, lobby signage, and window art by InsideTheSign, a boutique sign design studio in Minneapolis, MN." />
+  <meta property="og:image" content="https://insidethesign.com/images/fhima-paris.jpg" />
+  <meta property="og:url" content="https://insidethesign.com/portfolio.html" />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"CollectionPage","name":"Sign Design Portfolio — InsideTheSign Minneapolis","url":"https://insidethesign.com/portfolio.html","description":"Portfolio of commercial signage, murals, ADA wayfinding, vehicle wraps, and environmental graphics by InsideTheSign, Minneapolis MN.","isPartOf":{"@type":"WebSite","name":"InsideTheSign","url":"https://insidethesign.com"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://insidethesign.com/"},{"@type":"ListItem","position":2,"name":"Work","item":"https://insidethesign.com/portfolio.html"}]}}
+  </script>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f9f7f4; --dark: #1a1a1a; --accent: #c8873a; --accent-dark: #a86d28;
+      --text: #2a2a2a; --muted: #595959; --border: #ddd8d0; --white: #fff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+    body { background: var(--bg); color: var(--text); font-family: 'Atkinson Hyperlegible', Arial, sans-serif; line-height: 1.6; }
+
+    :focus-visible { outline: 2px solid var(--accent-dark); outline-offset: 3px; }
+
+    /* NAV */
+    body > nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.25rem 4rem;
+      background: var(--bg); border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { display: flex; align-items: center; }
+    .nav-logo img { height: 130px; width: auto; mix-blend-mode: multiply; }
+
+    body > nav ul { list-style: none; display: flex; gap: 2.5rem; align-items: center; }
+    body > nav ul a {
+      color: var(--dark); text-decoration: none;
+      font-size: 0.8rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    body > nav ul a:hover, body > nav ul a.active { color: var(--accent); }
+    .nav-cta {
+      background: var(--accent-dark) !important;
+      color: var(--white) !important;
+      padding: 0.45rem 1.1rem !important;
+      font-weight: 700 !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--dark) !important; }
+
+    .nav-hamb {
+      display: none; background: transparent; border: none;
+      padding: 0.5rem; cursor: pointer;
+      flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+    }
+    .nav-hamb span { display: block; width: 22px; height: 1.5px; background: var(--dark); }
+
+    .nav-mobile {
+      display: none; position: fixed; left: 0; right: 0;
+      background: var(--bg); border-bottom: 1px solid var(--border);
+      z-index: 99; flex-direction: column;
+    }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a {
+      padding: 1rem 1.5rem; border-bottom: 1px solid var(--border);
+      font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--dark); font-weight: 400; text-decoration: none; transition: color 0.2s;
+    }
+    .nav-mobile a:hover { color: var(--accent-dark); }
+    .nav-mobile a:last-child { border-bottom: none; }
+    .nav-mobile .nav-cta {
+      background: transparent !important; color: var(--dark) !important;
+      font-weight: 700 !important; padding: 1rem 1.5rem !important;
+      border-left: 3px solid var(--accent-dark);
+    }
+
+    /* PAGE HEADER */
+    .page-header { padding: calc(170px + 2rem) 4rem 3.5rem; border-bottom: 1px solid var(--border); }
+    .page-header h1 { font-size: clamp(2.5rem, 5vw, 5rem); font-weight: 700; color: var(--dark); letter-spacing: -0.02em; line-height: 1; }
+
+    /* FILTER BAR */
+    .filter-section {
+      padding: 2rem 4rem; border-bottom: 1px solid var(--border);
+      position: sticky; top: 170px; background: var(--bg); z-index: 10;
+    }
+    .filter-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .filter-btn {
+      padding: 0.5rem 1.25rem;
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      background: transparent; border: 1.5px solid var(--border); color: var(--muted);
+      cursor: pointer; transition: all 0.2s; border-radius: 0;
+    }
+    .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .filter-btn.active { background: var(--accent); color: var(--white); border-color: var(--accent); }
+
+    /* PROJECT GRID */
+    .projects-section { padding: 4rem 4rem 6rem; }
+    .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem 2rem; }
+
+    /* PROJECT CARD */
+    .project-card { text-decoration: none; display: block; }
+    .card-img { aspect-ratio: 4/3; overflow: hidden; background: var(--dark); margin-bottom: 1rem; }
+    .card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+    .project-card:hover .card-img img { transform: scale(1.04); }
+    .card-category { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 0.3rem; }
+    .card-title { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 0.4rem; transition: color 0.2s; }
+    .project-card:hover .card-title { color: var(--accent); }
+    .card-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.7; }
+
+    /* EMPTY STATE */
+    .card-img--empty { display: flex; align-items: center; justify-content: center; background: #1e1e1e; }
+    .card-img--empty span { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.2); }
+
+    .project-card.hidden { display: none; }
+    .no-results { grid-column: 1/-1; text-align: center; padding: 4rem 0; color: var(--muted); font-size: 0.9rem; }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark); padding: 2.5rem 4rem;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+    }
+    .flogo { font-size: 1rem; font-weight: 400; color: rgba(255,255,255,0.75); letter-spacing: 0.03em; text-decoration: none; transition: color 0.2s; }
+    .flogo:hover { color: var(--white); }
+    .flogo em { font-style: italic; }
+    .flogo em span { color: var(--accent); }
+    footer nav ul { list-style: none; display: flex; gap: 2rem; flex-wrap: wrap; }
+    footer nav ul a {
+      color: rgba(255,255,255,0.65); text-decoration: none;
+      font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s;
+    }
+    footer nav ul a:hover { color: var(--accent); }
+    .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.55); }
+
+    /* BACK TO TOP */
+    .back-to-top {
+      display: flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px;
+      background: var(--accent-dark); color: var(--white);
+      border: none; border-radius: 0; cursor: pointer;
+      margin: 1.5rem 2rem 1.5rem auto; /* right-aligned, above footer */
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.4s, background 0.2s;
+    }
+    .back-to-top.visible { opacity: 1; pointer-events: auto; }
+    .back-to-top:hover { background: var(--dark); }
+    .back-to-top svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    @media (max-width: 960px) {
+      body > nav { padding: 1rem 1.5rem; }
+      body > nav ul { display: none; }
+      .nav-hamb { display: flex; }
+      .page-header { padding: calc(162px + 2rem) 1.5rem 2rem; }
+
+      /* Filter: not sticky on mobile — scrolls away naturally as user browses */
+      .filter-section { padding: 0.75rem 1.5rem; position: static; top: auto; }
+      .filter-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; }
+      .filter-btn { padding: 0.45rem 0.5rem; font-size: 0.68rem; letter-spacing: 0.07em; }
+      /* "All" spans full width; the 6 category buttons fill 3 rows of 2 below it */
+      .filter-btn:first-child { grid-column: 1 / -1; }
+
+      .projects-section { padding: 2rem 1.5rem 4rem; }
+      .projects-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+      footer { padding: 2rem 1.5rem; flex-direction: column; text-align: center; }
+      footer nav ul { justify-content: center; }
+    }
+    @media (max-width: 580px) {
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" style="position:absolute;top:-100%;left:0;padding:0.5rem 1.25rem;background:var(--accent-dark);color:#fff;font-size:0.8rem;font-weight:700;letter-spacing:0.05em;text-decoration:none;z-index:200;">Skip to content</a>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="nav-logo"><img src="logo-nav.png" alt="InsideTheSign" /></a>
+    <ul>
+      <li><a href="portfolio.html" class="active">Work</a></li>
+      <li><a href="index.html#specialties">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="nav-hamb" aria-label="Open menu" aria-expanded="false" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile" id="nav-mobile" aria-hidden="true" role="navigation" aria-label="Mobile navigation">
+    <a href="portfolio.html">Work</a>
+    <a href="index.html#specialties">Services</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact" class="nav-cta">Contact Us</a>
+  </div>
+
+  <main id="main-content">
+
+    <div class="page-header">
+      <h1>Our Work</h1>
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-bar" id="filter-bar">
+        <!-- Populated by categories.js -->
+      </div>
+    </div>
+
+    <div class="projects-section">
+      <div class="projects-grid" id="projects-grid">
+
+        <a href="projects/code-compliance.html" class="project-card" data-category="interior-placemaking">
+          <div class="card-img"><img src="images/9320-excelsior.jpg" alt="Code Compliance Signage" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">Code Compliance</h3>
+          <p class="card-desc">Interior signage and environmental graphics for a commercial building, balancing brand identity with a clean, professional environment.</p>
+        </a>
+
+        <a href="projects/temporary-wall-signage.html" class="project-card" data-category="interior-placemaking">
+          <div class="card-img"><img src="images/usbc.jpg" alt="Temporary Wall Signage" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">Temporary Wall Signage</h3>
+          <p class="card-desc">Large-scale temporary wall graphics transforming a construction corridor into an immersive branded environment.</p>
+        </a>
+
+        <a href="projects/lobby-logo-letters.html" class="project-card" data-category="interior-placemaking">
+          <div class="card-img"><img src="images/ceso.jpg" alt="Lobby Logo Letters" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">Lobby Logo Letters</h3>
+          <p class="card-desc">Interior lobby signage and building identity for a professional services firm.</p>
+        </a>
+
+        <a href="projects/carols-concessions.html" class="project-card" data-category="vehicle-wraps">
+          <div class="card-img"><img src="images/carols-concessions.jpg" alt="Carol's Concessions" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">Carol's Concessions</h3>
+          <p class="card-desc">Full vehicle wrap and graphic design for a food truck, built for maximum visibility.</p>
+        </a>
+
+        <a href="projects/skylines-sports.html" class="project-card" data-category="murals">
+          <div class="card-img"><img src="images/skylines-sports.jpg" alt="Skylines &amp; Sports Mural" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">Skylines &amp; Sports</h3>
+          <p class="card-desc">Large-scale mural celebrating the Minneapolis skyline and local sports culture, bringing energy and civic pride to a retail space.</p>
+        </a>
+
+        <a href="projects/office-wayfinding.html" class="project-card" data-category="ada-wayfinding interior-placemaking">
+          <div class="card-img"><img src="images/meridian.jpg" alt="Office Wayfinding" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">Office Wayfinding</h3>
+          <p class="card-desc">Interior signage and wayfinding system for a multi-use property, from suite identifiers to fitness and common area environments.</p>
+        </a>
+
+        <a href="projects/ada-room-signage.html" class="project-card" data-category="ada-wayfinding">
+          <div class="card-img"><img src="images/piedmont.jpg" alt="ADA Room Signage" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">ADA Room Signage</h3>
+          <p class="card-desc">Wayfinding and building signage system for a multi-tenant commercial property.</p>
+        </a>
+
+        <a href="projects/cocoa-maas.html" class="project-card" data-category="murals">
+          <div class="card-img"><img src="images/cocoa-maas.jpg" alt="Cocoa Maas Mural" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">Cocoa Maas</h3>
+          <p class="card-desc">Custom mural installation, a vivid and expressive transformation of a commercial interior.</p>
+        </a>
+
+        <a href="projects/central-corona.html" class="project-card" data-category="murals">
+          <div class="card-img"><img src="images/central-corona.jpg" alt="Central Corona Mural" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">Central Corona</h3>
+          <p class="card-desc">Playful large-format mural featuring bold cartoon characters, bringing personality to a retail environment.</p>
+        </a>
+
+        <a href="projects/parisian-cafe-windows.html" class="project-card" data-category="art-decor">
+          <div class="card-img"><img src="images/mother-dough.jpg" alt="Parisian Cafe Windows" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">Parisian Cafe Windows</h3>
+          <p class="card-desc">Gold and blue hand-lettered Parisian window art for a Minneapolis bakery, designed for street visibility and brand identity.</p>
+        </a>
+
+        <a href="projects/restaurant-wall-art.html" class="project-card" data-category="art-decor">
+          <div class="card-img"><img src="images/maison-margeaux.jpg" alt="Restaurant Wall Art" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">Restaurant Wall Art</h3>
+          <p class="card-desc">Custom interior art and decorative graphics for an upscale Minneapolis restaurant.</p>
+        </a>
+
+        <a href="projects/mechanic-mural.html" class="project-card" data-category="murals">
+          <div class="card-img"><img src="images/texaxco.jpg" alt="Mechanic Mural" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">Mechanic Mural</h3>
+          <p class="card-desc">Hand-painted vintage mural in a Minneapolis auto garage, a bold homage to the classic American service station.</p>
+        </a>
+
+        <a href="projects/french-graffiti.html" class="project-card" data-category="art-decor exterior-signage">
+          <div class="card-img"><img src="images/french-graffiti.jpg" alt="French Graffiti" /></div>
+          <span class="card-category"></span>
+          <h3 class="card-title">French Graffiti</h3>
+          <p class="card-desc">French-inspired graffiti art installation, bold and graphic, designed as statement art for a commercial space.</p>
+        </a>
+
+      </div>
+    </div>
+
+  </main>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <footer>
+    <a href="index.html" class="flogo">Inside<em>The<span>Sign</span></em></a>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="portfolio.html">Work</a></li>
+        <li><a href="index.html#specialties">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <span class="footer-copy">&copy; 2026 InsideTheSign. Minneapolis, MN.</span>
+  </footer>
+
+  <script src="js/categories.js"></script>
+  <script>
+    // Back to top — fades in when it scrolls into view, never overlaps footer
+    const backToTop = document.getElementById('back-to-top');
+    new IntersectionObserver(([entry]) => {
+      backToTop.classList.toggle('visible', entry.isIntersecting);
+    }, { threshold: 0.5 }).observe(backToTop);
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Mobile menu
+    const hamb = document.querySelector('.nav-hamb');
+    const mobileMenu = document.getElementById('nav-mobile');
+    const mainNav = document.querySelector('body > nav');
+
+    function openMobileMenu() {
+      mobileMenu.classList.add('open');
+      mobileMenu.style.top = mainNav.offsetHeight + 'px';
+      hamb.setAttribute('aria-expanded', 'true');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+    }
+    function closeMobileMenu() {
+      if (!mobileMenu.classList.contains('open')) return;
+      mobileMenu.classList.remove('open');
+      hamb.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+    }
+    hamb.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mobileMenu.classList.contains('open') ? closeMobileMenu() : openMobileMenu();
+    });
+    document.addEventListener('click', (e) => {
+      if (!mainNav.contains(e.target) && !mobileMenu.contains(e.target)) closeMobileMenu();
+    });
+    document.addEventListener('touchmove', closeMobileMenu, { passive: true });
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMobileMenu));
+
+    // Filter
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBar = document.getElementById('filter-bar');
+      const cards     = document.querySelectorAll('.project-card');
+
+      const allBtn = document.createElement('button');
+      allBtn.className = 'filter-btn active';
+      allBtn.dataset.filter = 'all';
+      allBtn.textContent = 'All';
+      filterBar.appendChild(allBtn);
+
+      SITE_CATEGORIES.forEach(cat => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn';
+        btn.dataset.filter = cat.id;
+        btn.textContent = cat.name;
+        filterBar.appendChild(btn);
+      });
+
+      cards.forEach(card => {
+        const ids   = (card.dataset.category || '').trim().split(/\s+/);
+        const names = ids.map(id => getCategoryById(id)?.name).filter(Boolean);
+        const label = card.querySelector('.card-category');
+        if (label) label.textContent = names.join(' · ');
+      });
+
+      function applyFilter(filterId) {
+        filterBar.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.filter === filterId);
+        });
+        let visible = 0;
+        cards.forEach(card => {
+          const cats = (card.dataset.category || '').trim().split(/\s+/);
+          const show = filterId === 'all' || cats.includes(filterId);
+          card.classList.toggle('hidden', !show);
+          if (show) visible++;
+        });
+        let noResults = document.querySelector('.no-results');
+        if (visible === 0) {
+          if (!noResults) {
+            noResults = document.createElement('p');
+            noResults.className = 'no-results';
+            noResults.textContent = 'No projects in this category yet. Check back soon.';
+            document.getElementById('projects-grid').appendChild(noResults);
+          }
+        } else if (noResults) {
+          noResults.remove();
+        }
+        history.replaceState(null, '', filterId === 'all' ? window.location.pathname : '#' + filterId);
+      }
+
+      filterBar.addEventListener('click', e => {
+        if (e.target.classList.contains('filter-btn')) applyFilter(e.target.dataset.filter);
+      });
+
+      const hash = window.location.hash.slice(1);
+      if (hash && SITE_CATEGORIES.find(c => c.id === hash)) applyFilter(hash);
+    });
+  </script>
+</body>
+</html>
