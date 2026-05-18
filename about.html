@@ -148,16 +148,17 @@
     /* ── INTRO ── */
     .its-intro {
       padding: calc(150px + 5rem) 4rem 5rem;
-      border-bottom: 1px solid var(--border);
-      background: #efeae1;
+      border-bottom: 1px solid #2a2a2a;
+      background: var(--dark);
     }
     .its-intro p {
       font-size: clamp(2rem, 3.2vw, 3.2rem);
       font-weight: 700;
       line-height: 1.15;
-      color: var(--dark);
+      color: var(--white);
       letter-spacing: -0.02em;
     }
+    .its-intro p .brand { color: var(--accent); }
 
     /* ── BIO BODY ── */
     .its-bio {
@@ -406,7 +407,7 @@
 
     <!-- INTRO -->
     <section class="its-intro">
-      <p>InsideTheSign is a boutique design and signage studio run by an artist who knows the industry from the inside.</p>
+      <p><span class="brand">InsideTheSign</span> is a boutique design and signage studio run by an artist who knows the industry from the inside.</p>
     </section>
 
     <!-- BIO: text left, photo right -->
